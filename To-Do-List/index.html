@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List-Project </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <div class="mid-cont">
+      <div class="todo-app">
+        <h2>My Task List <img src="checked.png" alt="error"> 
+          
+        </h2>
+        
+        <div class="t1">
+          <span class="time-set">
+            <span id="set1">Date:</span>
+            <span id="set2">Month:</span>
+            <span id="set3">Year:</span>
+            <span id="set4">Hours:</span>
+       
+          </span>
+        </div>
+       
+        <div class="title-input">
+          <input type="text" id="input-title" placeholder="Type Title Your Task!!">
+          <button onclick="add_title()">Title</button>
+        </div>
+       
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Type Something!!">
+            <button onclick="AddTask()">Add</button>
+        </div>
+    
+      </div>
+
+      <div class="left-box" id="left-box">
+        <div class="top">
+          <div class="title">
+            <h2>Title</h2>
+          </div>
+          <div class="disc">
+            <h2>Description</h2>
+          </div class="delete">
+          <div><h2>Delete</h2></div>
+        </div>
+          <div class="row-list" id="row-list">
+            <div class="task-list" id="task-list">
+              <!-- <div class="row-list" id="row - 1">
+                <div class="title-list">
+                  <h2>title</h2>
+                  <span class="clear">X</span>
+                </div>
+                <div class="task_cont">
+                  <ul id="input_box - 1">
+                    <li>
+                      code retrieval
+                      <span class="edit"><img src="edit.png" alt=""></span>
+                      <span class="delete">x</span>
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
+           
+
+          </div>
+      </div>
+     </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
