@@ -57,8 +57,6 @@ function AddTask(){
     let todobox = document.getElementById(`input_box - ${index}`); //modified
     let li = document.createElement("li");
         li.innerHTML = `<p>${input_box.value}</p>`;
-        // task_box.appendChild(li);
-        // task_box.style.overflow = scroll;
 
         let edit = document.createElement('span');
         edit.classList.add('edit');
@@ -163,43 +161,4 @@ function ifExists(val){
     return 0;
 }
 
-// task_box_create.addEventListener('click', (e)=>{
- 
-//      if(e.target.tagName === "SPAN"){
-       
-//         if (e.target.classList.value === 'edit'){
-//             let li = e.target.parentElement.parentElement;
-//             let inp = e.target.parentElement.previousElementSibling;
-            
-//             if(inp.hasAttribute("input_box")){
-//                 inp.removeAttribute("input_box");
-            
-//                 inp.focus();
-//                 if(li.classList.contains("checked")){
-
-//                     li.classList.remove("checked");
-//                     //keeping count
-                  
-//                 }
-    
-//                 e.target.style.background = "url(editAct.png)";
-//                 e.target.style.backgroundSize = "cover";
-    
-//             }else{
-//                 inp.setAttribute("input_box", true);
-    
-//                 e.target.style.background = "url(edit.png)";
-//                 e.target.style.backgroundSize = "cover";
-    
-                
-        
-//                 console.log(inp.value);
-//                 inp.setAttribute("value", inp.value);
-//             }
-//         }
-//     }
-    
-    
-
-// });
 
