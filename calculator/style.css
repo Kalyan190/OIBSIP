@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.wrapper #title{
+    display: flex;
+    height: 60px;
+    width: 300px; 
+    position: relative;
+    margin-left: 50px; 
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #09f809;
+    font-family:'La Belle Aurore', cursive ;
+}
+.wrapper #dev{
+    display: flex;
+    justify-content: center;
+    color: #094bf3;
+    font-size: 30px;
+    position: relative;
+    font-family:'La Belle Aurore', cursive ;
+    padding-bottom: 70px; 
+    opacity: 0;
+    cursor: pointer;
+}
+.wrapper #dev:hover{
+    display: flex;
+    justify-content: center;
+    color: #094bf3;
+    font-size: 30px;
+    position: relative;
+    font-family:'La Belle Aurore', cursive ;
+    padding-bottom: 70px;
+    opacity: 1;
+}
+
+.container{
+    height: 500px;
+    width: 400px;
+    display: grid; 
+    position: absolute; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: aliceblue;
+    
+
+}
+.container .inp{
+    display: flex;
+    height: 100px;
+    width: 395px;
+    position: absolute;
+    justify-content: space-between;
+    text-align: center;
+    align-items: flex-end;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    flex-direction: column;
+    margin-bottom: 399px;
+    border-bottom: 6px solid rgb(0, 64, 255);
+    border-top: 5px solid rgb(0, 140, 255);
+    border-radius: 10px;
+    background-color: rgb(249, 249, 255);
+    color: rgb(0, 0, 0);
+}
+.container .inp .previous{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: end;
+    gap: 2px;
+    padding-right: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.container .inp .current{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: end;
+    padding-right: 20px;
+    font-size: 25px;
+    font-weight: bolder; 
+}
+
+.container .f1{
+    display: grid;
+    position: absolute;
+    height: 380px;
+    width: 390px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    grid-template-columns: auto auto auto auto;
+    position: absolute;
+    margin-bottom: 10px; 
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color: rgb(2, 5, 17);
+    
+}
+.container .f1 span{
+    border: 3px solid;
+    display: grid;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    font-size: 30px;
+    font-weight:bold ;
+    transition: 0.7s;
+     margin-left: 20px; 
+     margin-right:20px ;
+    background-color: #020713;
+    border-radius: 50% ;
+    color: white;
+    
+}
+.container .f1 span:hover{
+ background-color: rgb(248, 236, 10);  
+    transform: translateY(-10px);
+    border-radius: 100%;
+    border: 6px solid rgb(1, 0, 0);
+    cursor: pointer;
+    color: #000000;
+    
+}
+.container .f1  #a4:hover{
+    background-color: #0dff00;
+
+}
+.container .f1  #c1:hover{
+    background-color: #ff0000;
+
+}
+.container .f1  #back:hover{
+    background-color: #0040ff;
+
+}
+
+
+.f2{
+	position: relative;
+	height: 510px;
+	width: 410px;
+	background-color: rgba(0 , 0 , 0 , 0.75);
+    border-radius: 20px;
+	display: flex;
+    margin-left:auto;
+    margin-right: auto;
+	place-content: center;
+	place-items: center;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.f2::after{
+	content: '';
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background-image: conic-gradient(transparent,
+	transparent,transparent,#007bff);
+	animation: animate 3s linear infinite;
+	animation-delay: -2s;
+
+}
+
+.f2::before{
+	content: '';
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background-image: conic-gradient(transparent,
+	transparent,transparent,#f80790);
+	animation: animate 3s linear infinite;
+}
+
+  
+@keyframes animate {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+	
+}
+
+.f2 .container{
+	position: absolute;
+	inset: 5px;
+	border-radius: 15px;
+	background-color: #000000;
+	z-index: 1;
+
+}
